@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SpamGuard | SMS Detection</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🛡️</span>
+            SpamGuard
+        </div>
+
+        <div class="nav-text">
+            NLP Powered Detection
+        </div>
+
+    </nav>
+
+
+    <main class="main-container">
+
+        <section class="hero">
+
+            <div class="tag">
+                ✨ Machine Learning Powered
+            </div>
+
+            <h1>
+                Detect Spam Messages
+                <span>Instantly.</span>
+            </h1>
+
+            <p>
+                Protect yourself from unwanted messages.
+                Enter an SMS message and let our AI-powered
+                classification model analyse it.
+            </p>
+
+        </section>
+
+
+        <section class="detector-card">
+
+            <div class="card-heading">
+
+                <div>
+                    <h2>Message Analyzer</h2>
+
+                    <p>Enter your SMS message below.</p>
+                </div>
+
+                <div class="status">
+                    ● Model Ready
+                </div>
+
+            </div>
+
+
+            <textarea
+                id="message"
+                maxlength="5000"
+                placeholder="Example: Congratulations! You have won a free prize..."
+            ></textarea>
+
+            <div class="input-footer">
+
+                <span id="charCount">0 / 5000</span>
+
+                <button id="clearBtn" class="clear-btn">
+                    Clear
+                </button>
+
+            </div>
+
+
+            <button id="checkBtn" class="check-btn">
+
+                <span id="buttonText">
+                    Analyze Message
+                </span>
+
+                <span> → </span>
+
+            </button>
+
+
+            <div id="result" class="result hidden">
+
+                <div class="result-icon" id="resultIcon"></div>
+
+                <div class="result-content">
+
+                    <h3 id="resultTitle"></h3>
+
+                    <p id="resultDescription"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">⚡</div>
+
+                <h3>Fast Detection</h3>
+
+                <p>Get predictions in seconds.</p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🧠</div>
+
+                <h3>NLP Technology</h3>
+
+                <p>Uses TF-IDF and Naive Bayes.</p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🔒</div>
+
+                <h3>Simple & Secure</h3>
+
+                <p>Analyze messages through your local application.</p>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>SpamGuard | Built with Python, Flask and NLP</p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
