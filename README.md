@@ -163,9 +163,7 @@ pip install -r requirements.txt
 
 ## 📸 Application Preview
 
-```markdown
 ![SpamGuard Application](screenshots/homepage.png)
-```
 
 ## 🎯 Learning Outcomes
 
